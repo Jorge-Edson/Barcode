@@ -1,0 +1,14 @@
+header
+{
+  width: 90vw;
+  height: 10vh;
+  padding: 10px;
+  margin-left: 5vw;
+  text-align: center;
+  border-right: 1px solid red;
+  border-bottom: 1px solid red;
+  border-left: 2px solid darkred;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background: linear-gradient(to right, whitesmoke, white);
+}
