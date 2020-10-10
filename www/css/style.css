@@ -54,19 +54,6 @@ footer
   background: linear-gradient(to right, whitesmoke, white);
 }
 
-.fa-camera
-{
-  width: 40px;
-  height: 40px;
-  padding: 10px;
-  margin-top: 0.5vh;
-  border-right: 1px solid red;
-  border-bottom: 1px solid red;
-  border-top: 2px solid darkred;
-  border-left: 2px solid darkred;
-  border-radius: 20px;
-}
-
 .fa-barcode
 {
   width: 100px;
@@ -89,7 +76,7 @@ small
 {
   height: 72vh;
   border-radius: 20px;
-   border-right: 1px solid red;
+  border-right: 1px solid red;
   border-bottom: 1px solid red;
   border-top: 2px solid darkred;
   border-left: 2px solid darkred;
@@ -109,4 +96,20 @@ small
   border-left: 2px solid darkred;
   border-radius: 20px;
   background: linear-gradient(to right, whitesmoke, white);
+}
+
+button
+{
+  width: 40px;
+  height: 40px;
+  border-right: 1px solid red;
+  border-bottom: 1px solid red;
+  border-top: 2px solid darkred;
+  border-left: 2px solid darkred;
+  border-radius: 20px;
+}
+
+button:active
+{
+  outline: none;
 }
