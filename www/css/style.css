@@ -1,3 +1,8 @@
+body
+{
+  background: linear-gradient(to bottom right, tomato, lightsalmon);
+}
+
 header
 {
   width: 90vw;
@@ -10,5 +15,98 @@ header
   border-left: 2px solid darkred;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  background: linear-gradient(to right, whitesmoke, white);
+}
+
+article
+{
+  width: 90vw;
+  height: 76vh;
+  padding: 10px;
+  margin-top: 2vh;
+  margin-left: 5vw;
+  text-align: center;
+  border-right: 1px solid red;
+  border-bottom: 1px solid red;
+  border-top: 2px solid darkred;
+  border-left: 2px solid darkred;
+  border-radius: 20px;
+  background: linear-gradient(to right, whitesmoke, white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer
+{
+  width: 90vw;
+  height: 10vh;
+  padding: 10px;
+  margin-top: 2vh;
+  margin-left: 5vw;
+  text-align: center;
+  border-right: 1px solid red;
+  border-top: 1px solid darkred;
+  border-left: 2px solid darkred;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background: linear-gradient(to right, whitesmoke, white);
+}
+
+.fa-camera
+{
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  margin-top: 0.5vh;
+  border-right: 1px solid red;
+  border-bottom: 1px solid red;
+  border-top: 2px solid darkred;
+  border-left: 2px solid darkred;
+  border-radius: 20px;
+}
+
+.fa-barcode
+{
+  width: 100px;
+  height: 80px;
+  padding: 7px;
+  background: whitesmoke;
+  border-right: 1px solid red;
+  border-bottom: 1px solid red;
+  border-top: 2px solid darkred;
+  border-left: 2px solid darkred;
+}
+
+small
+{
+  width: 50vw;
+}
+
+
+.modal-content
+{
+  height: 72vh;
+  border-radius: 20px;
+   border-right: 1px solid red;
+  border-bottom: 1px solid red;
+  border-top: 2px solid darkred;
+  border-left: 2px solid darkred;
+}
+
+.modal
+{
+  width: 90vw;
+  height: 76vh;
+  padding-top: 0.5vh;
+  margin-top: 12vh;
+  margin-left: 5vw;
+  text-align: center;
+  border-right: 1px solid red;
+  border-bottom: 1px solid red;
+  border-top: 2px solid darkred;
+  border-left: 2px solid darkred;
+  border-radius: 20px;
   background: linear-gradient(to right, whitesmoke, white);
 }
