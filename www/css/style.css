@@ -74,7 +74,7 @@ small
 
 .modal-content
 {
-  height: 72vh;
+  min-height: 72vh;
   border-radius: 20px;
   border-right: 1px solid red;
   border-bottom: 1px solid red;
