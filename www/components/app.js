@@ -3,12 +3,17 @@
 $(document).on("click","#codeBar",function(){
      cordova.plugins.barcodeScanner.scan(
       function (result) {
-        if(result==280720550){
-    window.location.replace("http://stackoverflow.com");
+        switch (result.text)
+        {
+          case "280720550": $('#produto1').modal(); break;
+          case "989895555": $('#produto2').modal(); break;
+          case "85236987": $('#produto3').modal(); break;
+          case "85369877444": $('#produto4').modal(); break;
+          default: alert("Produto não encontrado."); break;
         }
       },
       function (error) {
-          alert("Scanning failed: " + error);
+          alert("Escaneamento falhou: " + error);
       },
       {
           preferFrontCamera : false, // iOS and Android
@@ -25,4 +30,3 @@ $(document).on("click","#codeBar",function(){
       }
    );
 })
-

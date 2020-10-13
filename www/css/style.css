@@ -1,57 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 body
 {
-  background: linear-gradient(to bottom right, tomato, lightsalmon);
+  margin: 0;
+  padding: 0;
+  font-family: 'Bebas Neue', cursive;
+  background: linear-gradient(
+    to bottom right, 
+    rgba(36,0,0,1) 0%, 
+    rgba(121,9,9,1) 35%, 
+    rgba(255,0,0,1) 100%
+    );
+}
+
+/* Divisões da Página */
+header, footer
+{
+  height: 10vh;
+  padding: 15px;
+}
+
+header, article, footer, .modal
+{
+  width: 90vw;
+  margin-left: 5vw;
+  text-align: center;
+
+  background: linear-gradient(
+    to bottom right, 
+    rgba(204,204,204,1) 0%, 
+    rgba(221,221,221,1) 35%, 
+    rgba(255,255,255,1) 100%
+    );
 }
 
 header
 {
-  width: 90vw;
-  height: 10vh;
-  padding: 10px;
-  margin-left: 5vw;
-  text-align: center;
   border-right: 1px solid red;
   border-bottom: 1px solid red;
   border-left: 2px solid darkred;
+
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  background: linear-gradient(to right, whitesmoke, white);
 }
 
-article
+article, .modal
 {
-  width: 90vw;
   height: 76vh;
-  padding: 10px;
   margin-top: 2vh;
-  margin-left: 5vw;
-  text-align: center;
-  border-right: 1px solid red;
-  border-bottom: 1px solid red;
-  border-top: 2px solid darkred;
-  border-left: 2px solid darkred;
-  border-radius: 20px;
-  background: linear-gradient(to right, whitesmoke, white);
+  margin-bottom: 2vh;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+article, .modal, .modal-content
+{
+  border-right: 1px solid red;
+  border-bottom: 1px solid red;
+  border-top: 2px solid darkred;
+  border-left: 2px solid darkred;
+  border-radius: 20px;
+}
+
 footer
 {
-  width: 90vw;
-  height: 10vh;
-  padding: 10px;
-  margin-top: 2vh;
-  margin-left: 5vw;
-  text-align: center;
   border-right: 1px solid red;
   border-top: 1px solid darkred;
   border-left: 2px solid darkred;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  background: linear-gradient(to right, whitesmoke, white);
+}
+
+/* Modal */
+
+.modal
+{
+  margin-top: 12vh;
+  border-radius: 20px;
+  background: linear-gradient(
+    to bottom right, 
+    rgba(204,204,204,1) 0%, 
+    rgba(221,221,221,1) 35%, 
+    rgba(255,255,255,1) 100%
+    );
+}
+
+.modal-content
+{
+  min-height: 72vh;
+  min-width: 84vw;
+}
+
+/* Elementos da Página */
+
+button
+{
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+button:focus
+{
+  outline: none;
 }
 
 .fa-barcode
@@ -60,6 +114,10 @@ footer
   height: 80px;
   padding: 7px;
   background: whitesmoke;
+}
+
+button, .fa-barcode
+{
   border-right: 1px solid red;
   border-bottom: 1px solid red;
   border-top: 2px solid darkred;
@@ -69,47 +127,4 @@ footer
 small
 {
   width: 50vw;
-}
-
-
-.modal-content
-{
-  min-height: 72vh;
-  border-radius: 20px;
-  border-right: 1px solid red;
-  border-bottom: 1px solid red;
-  border-top: 2px solid darkred;
-  border-left: 2px solid darkred;
-}
-
-.modal
-{
-  width: 90vw;
-  height: 76vh;
-  padding-top: 0.5vh;
-  margin-top: 12vh;
-  margin-left: 5vw;
-  text-align: center;
-  border-right: 1px solid red;
-  border-bottom: 1px solid red;
-  border-top: 2px solid darkred;
-  border-left: 2px solid darkred;
-  border-radius: 20px;
-  background: linear-gradient(to right, whitesmoke, white);
-}
-
-button
-{
-  width: 40px;
-  height: 40px;
-  border-right: 1px solid red;
-  border-bottom: 1px solid red;
-  border-top: 2px solid darkred;
-  border-left: 2px solid darkred;
-  border-radius: 20px;
-}
-
-button:active
-{
-  outline: none;
 }
